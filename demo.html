@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Failsafe Forms</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="demo">
+      <form id="demo-form">
+        <fieldset class="">
+          <legend>This is a form!</legend>
+
+          <div class="form__field">
+            <label for="name" class="">Name</label>
+            <input
+              type="text"
+              id="name"
+              class=""
+              name="name"
+              placeholder="name placeholder"
+              aria-describedby="name-hint"
+              autocomplete="name"
+              required
+            />
+            <div id="name-hint" class="field__hint">name hint</div>
+          </div>
+
+          <div class="form__field">
+            <label for="email" class="">Email</label>
+            <input
+              type="email"
+              id="email"
+              class=""
+              name="email"
+              placeholder="email placeholder"
+              aria-describedby="email-hint"
+              autocomplete="email"
+              required
+            />
+            <div id="email-hint" class="field__hint">email hint</div>
+          </div>
+
+          <div class="form__field">
+            <label for="password" class="">Password</label>
+            <input
+              type="password"
+              id="password"
+              class=""
+              name="password"
+              placeholder="password placeholder"
+              aria-describedby="password-hint"
+              required
+            />
+            <div id="password-hint" class="field__hint">password hint</div>
+          </div>
+
+          <div class="form__field">
+            <label for="notes" class="">Notes</label>
+            <textarea
+              name="notes"
+              id="notes"
+              class=""
+              placeholder="notes placeholder"
+            ></textarea>
+            <div id="notes-hint" class="field__hint">notes hint</div>
+          </div>
+
+          <div>
+            <div class="form__actions">
+              <button type="reset" class="btn" id="reset">Reset</button>
+              <button type="submit" class="btn btn--primary" id="submit">
+                Submit Form
+              </button>
+            </div>
+            <div
+              id="feedback"
+              class="form__feedback"
+              aria-live="assertive"
+              role="alert"
+            >
+              feedback
+            </div>
+          </div>
+        </fieldset>
+        <div class="state__actions">
+          <button id="load">Load</button>
+          <button id="save">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

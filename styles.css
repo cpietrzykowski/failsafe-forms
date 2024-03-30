@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+form {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border-radius: .2em;
+    box-shadow: 0 0 3em -2em black;
+}
+
+form * {
+    transition: all 0.2s ease-in-out;
+}
+
+input,
+select {
+    text-align: center;
+}
+
+input,
+textarea {
+    background-color: #f2f2f2;
+    line-height: 1.2;
+    padding: 0.5em;
+    border: 1px solid #333;
+    border-radius: .15em;
+}
+
+.demo {
+    display: flex;
+    justify-content: center;
+}
+
+#demo-form>fieldset {
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+    border-radius: 0.2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333;
+}
+
+fieldset>legend {
+    background-color: #333;
+    color: #eee;
+    font-weight: bold;
+    padding: 0.25em 2em;
+    border-radius: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.form__field>input:focus,
+.form__field>textarea:focus {
+    isolation: isolate;
+    box-shadow: 0 0.5em 1em -0.75em black;
+}
+
+.field__hint {
+    padding: 0.25em;
+    text-align: right;
+}
+
+.form__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.5em;
+}
+
+.btn {
+    border-radius: 0.2em;
+    padding: 0.25em 1em;
+}
+
+.btn--primary {
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.form__feedback {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    color: #eee;
+    background-color: #555;
+    border: 2px solid #444;
+}
+
+.field__hint {
+    font-style: italic;
+    color: #aaa;
+}
+
+.state__actions {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}

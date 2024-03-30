@@ -1,0 +1,13 @@
+{
+  "name": "failsafe-forms",
+  "version": "0.0.0",
+  "description": "Graceful state management for web forms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "christopher",
+  "license": "UNLICENSED",
+  "devDependencies": {
+  }
+}
